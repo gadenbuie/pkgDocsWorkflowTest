@@ -54,7 +54,7 @@ jobs:
             website
           extra-packages: |
             local::.
-            r-lib/pkgdown
+            github::r-lib/pkgdown
 
       # If events is a PR, set subdir to 'preview/pr<pr_number>'
       - name: "[PR] Set documentation subdirectory"
