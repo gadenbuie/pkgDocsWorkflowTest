@@ -1,0 +1,9 @@
+pandoc: 2.14.2
+pkgdown: 2.0.1.9000
+pkgdown_sha: 8a77537449ab622ba4351025e62fdc481b0c8dbd
+articles: {}
+last_built: 2022-01-10T20:54Z
+urls:
+  reference: https://pkg.garrickadenbuie.com/pkgDocsWorkflowTest/v0.0.1.9000/reference
+  article: https://pkg.garrickadenbuie.com/pkgDocsWorkflowTest/v0.0.1.9000/articles
+
