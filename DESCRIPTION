@@ -2,7 +2,8 @@ Package: testpackage
 Title: A test package
 Version: 0.0.1
 Authors@R: 
-    person("Garrick Aden-Buie")
+    person("Garrick", "Aden-Buie", , "garrick@rstudio.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7111-0077"))
 Description: A test package
 License: MIT + file LICENSE
 Imports:
