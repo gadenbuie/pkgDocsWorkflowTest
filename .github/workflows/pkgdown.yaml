@@ -54,8 +54,6 @@ jobs:
             website
           extra-packages: |
             local::.
-            # any::pkgdown
-            # TODO: use line above when next pkgdown is released
             r-lib/pkgdown
 
       # If events is a PR, set subdir to 'preview/pr<pr_number>'
