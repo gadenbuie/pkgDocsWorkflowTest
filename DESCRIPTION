@@ -1,6 +1,11 @@
 Package: testpackage
-Version: 0.0.1
 Title: A test package
+Version: 0.0.1
+Authors@R: 
+    person("Garrick Aden-Buie")
 Description: A test package
-Authors@R: person("Hadley Wickham")
+License: MIT + file LICENSE
+Imports:
+    utils
+Encoding: UTF-8
 RoxygenNote: 7.1.2
