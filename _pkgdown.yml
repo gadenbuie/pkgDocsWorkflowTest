@@ -1,0 +1,5 @@
+url: https://pkg.garrickadenbuie.com/pkgDocsWorkflowTest
+
+template:
+  bootstrap: 5
+  bootswatch: litera
