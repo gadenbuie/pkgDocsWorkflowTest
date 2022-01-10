@@ -19,3 +19,10 @@ c <- function() {}
 #' E
 #' @name e
 NULL
+
+
+#' F
+#'
+#' A brand new Function with a capital `f()`.
+#' @export
+f <- function() "f"

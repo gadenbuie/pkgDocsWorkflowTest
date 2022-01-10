@@ -11,6 +11,7 @@ on:
       - synchronize
       - closed
     paths:
+      - 'NAMESPACE'
       - 'man/**'
       - 'pkgdown/**'
       - 'vignettes/**'
@@ -23,9 +24,15 @@ on:
 name: pkgdown
 
 jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump context
+        uses: crazy-max/ghaction-dump-context@v1
+
   pkgdown-build:
     runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request' && github.event.action != 'closed'
+    if: github.event_name != 'pull_request' || github.event.action != 'closed'
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
