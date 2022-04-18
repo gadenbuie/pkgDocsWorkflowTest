@@ -38,13 +38,12 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages:
-            any::rmarkdown
             any::devtools
             rcmdcheck
 
       - name: Install package locally
         shell: Rscript {0}
-        run: pak::pak("local::.", dependencies = "hard")
+        run: pak::pak(c("local::.", "rmarkdown"), dependencies = "hard")
 
       - name: Build README
         shell: Rscript {0}
