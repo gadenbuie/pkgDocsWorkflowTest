@@ -39,6 +39,7 @@ jobs:
         with:
           extra-packages:
             any::rmarkdown
+            any::devtools
             rcmdcheck
 
       - name: Install package locally
