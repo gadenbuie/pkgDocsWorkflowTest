@@ -62,8 +62,12 @@ jobs:
             connect
             website
           extra-packages: |
-            local::.
+            any::rmarkdown
             github::r-lib/pkgdown
+
+      - name: Install package locally
+        shell: Rscript {0}
+        run: pak::pak("local::.", dependencies = "hard")
 
       # If events is a PR, set subdir to 'preview/pr<pr_number>'
       - name: "[PR] Set documentation subdirectory"

@@ -7,6 +7,7 @@ Authors@R:
 Description: A test package
 License: MIT + file LICENSE
 Imports:
+    rmarkdown,
     utils
 Encoding: UTF-8
 RoxygenNote: 7.1.2
